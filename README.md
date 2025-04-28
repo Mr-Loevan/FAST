@@ -39,11 +39,8 @@
 
 This repository contains the official implementation of the paper "Fast-Slow Thinking for Large Visual-Language Model Reasoning".
 
-
-## Getting Started
-
-### Inference
-
+## Evaluate
+TODO
 
 
 
