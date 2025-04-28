@@ -4,11 +4,11 @@
   <h2 align="center"> Fast-Slow Thinking for Large Visual-Language Model Reasoning
 </h2>
   <p align="center">
-    <a><strong>Wenyi Xiao<sup>1</sup> , </strong></a>
+    <a><strong>Wenyi Xiao<sup>1,2</sup> , </strong></a>
     <a><strong>Leilei Gan<sup>1†</sup> , </strong></a>
     <a><strong>Weilong Dai<sup>2</sup> , </strong></a>
     <a><strong>Wanggui He<sup>2</sup>  , </strong></a>
-    <a><strong>Ziwei Huang<sup>1</sup> , </strong></a>
+    <a><strong>Ziwei Huang<sup>1,2</sup> , </strong></a>
     <a><strong>Haoyuan Li<sup>2</sup> ,  </strong></a>
     <br>
     <a><strong>Fangxun Shu<sup>2</sup> ,  </strong></a>
