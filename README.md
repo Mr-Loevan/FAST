@@ -150,5 +150,5 @@ This project is licensed under the Apache 2.0 License.
 ## Acknowledgments
 
 - The results reported in our paper were originally implemented with [OpenRLHF](https://github.com/OpenRLHF/OpenRLHF)
-- This repository provides a reimplementation using [EasyR1]([https://github.com/EasyR1/EasyR1](https://github.com/hiyouga/EasyR1)) framework
-- Thanks to the [VeRL](https://github.com/volcengine/verl) and [EasyR1]([https://github.com/EasyR1/EasyR1](https://github.com/hiyouga/EasyR1)) team for the base training framework.
+- This repository provides a reimplementation using [EasyR1](https://github.com/hiyouga/EasyR1) framework
+- Thanks to the [VeRL](https://github.com/volcengine/verl) and [EasyR1](https://github.com/hiyouga/EasyR1) team for the base training framework.
