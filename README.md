@@ -16,7 +16,7 @@
 
 ## Overview
 
-This repository contains the official implementation of **FAST-GRPO** (Fast-Slow Thinking Group Relative Policy Optimization).
+This repository contains the official implementation of **FAST-GRPO** (Fast-Slow Thinking Group Relative Policy Optimization), achieving high performance in applying fast-slow thinking to both visual and textual reasoning.
 
 ## Table of Contents
 - [Installation](#installation)
