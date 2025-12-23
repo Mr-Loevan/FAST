@@ -129,6 +129,18 @@ bash examples/train_fast_llm.sh
 | FAST-7B | Qwen-2.5-VL-7B | Coming Soon |
 | FAST-4B | Qwen-3-VL-4B | Coming Soon |
 
+## Evaluation Results
+
+
+### Performance on Reasoning Benchmarks
+
+| Method | GSM8K (Acc) | GSM8K (Length) | MATH 500 (Acc) | MATH 500 (Length) | AIME 2024 (Acc) | AIME 2024 (Length) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **FAST-1.5B** | **86.8** | **851** | **85.8** | **2645** | **34.17** | **8003** |
+
+> **Note:** Length denotes the number of generated tokens.
+
+
 ## Citation
 
 If you find this work useful, please cite our paper:
