@@ -411,9 +411,10 @@ class RayPPOTrainer:
         dataloader_state_dict = self.train_dataloader.state_dict()
         torch.save(dataloader_state_dict, dataloader_path)
 
+        best_val_reward_score = sum(self.best_val_reward_scores.values()) / len(self.best_val_reward_scores) if self.best_val_reward_scores else 0.0
         checkpointer_tracker_info = {
             "best_global_step": self.best_global_step,
-            "best_val_reward_score": round(self.best_val_reward_score, 4),
+            "best_val_reward_score": round(best_val_reward_score, 4),
             "last_global_step": self.global_step,
             "last_actor_path": os.path.abspath(actor_path),
         }
@@ -427,7 +428,6 @@ class RayPPOTrainer:
         elif self.config.trainer.find_last_checkpoint:
             load_checkpoint_path, tracker_info = find_latest_ckpt(self.config.trainer.save_checkpoint_path)
             if tracker_info is not None:
-                self.best_val_reward_score = tracker_info.get("best_val_reward_score", 0.0)
                 self.best_global_step = tracker_info.get("best_global_step", 0)
         else:
             load_checkpoint_path = None
@@ -662,6 +662,9 @@ class RayPPOTrainer:
                 print(f"[Online Filtering] Stored reward_metrics with {len(kept_sample_idxs)} samples")
 
             batch = DataProto.concat([batch, new_batch]) if batch is not None else new_batch
+            del new_batch, gen_batch, gen_batch_output
+            torch.cuda.empty_cache()
+            
             current_batch_size = len(batch) // self.config.worker.rollout.n
             rollout_batch_size = self.config.data.rollout_batch_size
             if current_batch_size < rollout_batch_size:
