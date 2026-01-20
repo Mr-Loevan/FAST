@@ -126,7 +126,7 @@ bash examples/train_fast_llm.sh
 |-------|------------|----------|
 | FAST-1.5B | DeepSeek-R1-Distill-Qwen-1.5B | [ModelScope](https://modelscope.cn/models/ruiruiL/FAST_DS_1_5b) |
 | FAST-3B | Qwen-2.5-VL-3B | [ModelScope](https://modelscope.cn/models/xiaowenyi/FAST-3B) |
-| FAST-7B | Qwen-2.5-VL-7B | Coming Soon |
+| FAST-7B | Qwen-2.5-VL-7B | [ModelScope](https://modelscope.cn/models/xiaowenyi/FAST-7B) |
 | FAST-8B-Preview | Qwen-3-VL-8B | [ModelScope](https://modelscope.cn/models/xiaowenyi/FAST-8B-Preview) |
 | FAST-8B | Qwen-3-VL-8B | Coming Soon |
 
