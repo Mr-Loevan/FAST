@@ -1,7 +1,7 @@
 <!-- # FAST-GRPO -->
 
 <p align="center">
-  <h2 align="center">[NeurIPS 2025 Spotlight] Fast-Slow Thinking GRPO for Large Visual-Language Model Reasoning
+  <h2 align="center">[NeurIPS 2025 Spotlight] Fast-Slow Thinking GRPO for Large Vision-Language Model Reasoning
 </h2>
   <p align="center">
     </br>
